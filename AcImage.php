@@ -34,9 +34,10 @@ class AcImage
 	const TOP_RIGHT = 1;
 	const BOTTOM_RIGHT = 2;
 	const BOTTOM_LEFT = 3;
+	const CENTER = 4;
 
-	private static $correctCorners = array (0, 1, 2, 3);
-	private static $cornerLogo = 2; // BOTTOM_RIGHT
+	private static $correctPositions = array (0, 1, 2, 3, 4);
+	private static $positionLogo = 2; // BOTTOM_RIGHT
 
 	/**
 	 * Путь к файлу с изображением
@@ -587,25 +588,27 @@ class AcImage
 	 * Наносит лого на изображение.
 	 *
 	 * @param mixed
-	 * @param int номер угла, в котором будет размещенно лого<br />
-	 * 0 1<br />
+	 * @param int номер позиции, в которой будет размещенно лого
+	 * 0 1
 	 * 2 3
-	 *
+	 * 4 center
+	 * 
 	 * @see AcImage::TOP_LEFT
 	 * @see AcImage::TOP_RIGHT
 	 * @see AcImage::BOTTOM_LEFT
 	 * @see AcImage::BOTTOM_RIGHT
-	 *
+	 * @see AcImage::CENTER
+	 * 
 	 * @return AcImage
 	 * @throws IllegalArgumentException
 	 */
 
-	public function drawLogo($logo, $corner = null) // string $logo [$corner] || AcImage $logo [$corner]
+	public function drawLogo($logo, $position = null) // string $logo [$corner] || AcImage $logo [$corner]
 	{
-		if (is_null($corner))
-			$corner = self::$cornerLogo;
+		if (is_null($position))
+			$position = self::$positionLogo;
 
-		if (!AcImage::isCorrectCorner($corner))
+		if (!AcImage::isCorrectPosition($position))
 			throw new IllegalArgumentException();
 
 		if (is_string($logo))
@@ -625,7 +628,7 @@ class AcImage
 		imagealphablending($this->getResource(), true);
 		$logoSize = $logo->getSize();
 
-		$location = $this->getLogoPosition($corner, $logoSize->getWidth(), $logoSize->getHeight());
+		$location = $this->getLogoPosition($position, $logoSize->getWidth(), $logoSize->getHeight());
 		imagecopy($this->getResource(), $logo->getResource(), $location->getX(), $location->getY(), 0, 0,
 						$logoSize->getWidth(), $logoSize->getHeight());
 
@@ -636,21 +639,25 @@ class AcImage
 	 * @ignore
 	 */
 
-	private function getLogoPosition($corner, $width, $height)
+	private function getLogoPosition($position, $width, $height)
 	{
 		$paddingX = $this->getWidth() * self::$paddingProportionLogo;
 		$paddingY = $this->getHeight() * self::$paddingProportionLogo;
 
 
-		if ($corner == self::BOTTOM_RIGHT || $corner == self::BOTTOM_LEFT)
+		if ($position == self::BOTTOM_RIGHT || $position == self::BOTTOM_LEFT)
 			$y = $this->getHeight() - $paddingY - $height;
 		else
 			$y = $paddingY;
 
-		if ($corner == self::BOTTOM_RIGHT  || $corner == self::TOP_RIGHT)
+		if ($position == self::BOTTOM_RIGHT  || $position == self::TOP_RIGHT)
 			$x = $this->getWidth() - $paddingX - $width;
 		else
 			$x = $paddingX;
+		
+		if ($position == self::CENTER)
+			$x = ($this->getWidth() - $width)/2;
+			$y = ($this->getHeight() - $height)/2;
 
 		return new Point((int)$x, (int)$y);
 	}
@@ -659,9 +666,9 @@ class AcImage
 	 * @ignore
 	 */
 
-	private static function isCorrectCorner($corner)
+	private static function isCorrectPosition($position)
 	{
-		return in_array($corner, self::$correctCorners);
+		return in_array($position, self::$correctPositions);
 	}
 
 	/**
@@ -905,9 +912,9 @@ class AcImage
 		return self::$backgroundColor;
 	}
 
-	public function getCornerLogo()
+	public function getPositionLogo()
 	{
-		return self::$cornerLogo;
+		return self::$positionLogo;
 	}
 
 	/**
@@ -915,21 +922,23 @@ class AcImage
 	 * @param int номер угла изображения<br />
 	 * 0 1<br />
 	 * 2 3
-	 *
+	 * 4 - center
+	 * 
 	 * @see AcImage::TOP_LEFT
 	 * @see AcImage::TOP_RIGHT
 	 * @see AcImage::BOTTOM_RIGHT
 	 * @see AcImage::BOTTOM_LEFT
-	 *
+	 * @see AcImage::CENTER
+	 * 
 	 * @throws IllegalArgumentException
 	 */
 
-	public function setCornerLogo($corner)
+	public function setPositionLogo($position)
 	{
-		if(!self::isCorrectCorner($corner))
+		if(!self::isCorrectPosition($position))
 			throw new IllegalArgumentException();
 
-		self::$cornerLogo = $corner;
+		self::$positionLogo = $position;
 	}
 
 	/**
