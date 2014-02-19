@@ -655,10 +655,11 @@ class AcImage
 		else
 			$x = $paddingX;
 		
-		if ($position == self::CENTER)
+		if ($position == self::CENTER){
 			$x = ($this->getWidth() - $width)/2;
 			$y = ($this->getHeight() - $height)/2;
-
+		}
+		
 		return new Point((int)$x, (int)$y);
 	}
 
