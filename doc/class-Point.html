@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Point</title>
+
+	<script type="text/javascript" src="resources/combined.js?3408117355"></script>
+	<script type="text/javascript" src="elementlist.js?3429070013"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Обзор</span></a>
+
+
+		<div id="groups">
+			<h3>Пакеты</h3>
+			<ul>
+				<li><a href="package-exceptions.html">exceptions</a>
+						</li>
+				<li class="active"><a href="package-geometry.html">geometry</a>
+						</li>
+				<li><a href="package-image.html">image</a>
+						</li>
+				<li><a href="package-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Классы</h3>
+			<ul>
+				<li class="active"><a href="class-Point.html">Point</a></li>
+				<li><a href="class-Rectangle.html">Rectangle</a></li>
+				<li><a href="class-Size.html">Size</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Обзор</span></a>
+			</li>
+			<li>
+				<a href="package-geometry.html" title="Summary of geometry"><span>Пакет</span></a>
+			</li>
+			<li class="active">
+<span>Класс</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Дерево</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Класс Point</h1>
+
+
+	<div class="description">
+	
+<p>Класс, описываюший точку на плоскости.</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-geometry.html">geometry</a><br />
+
+				<b>Author:</b>
+				Антон Кургузенков &lt;<a
+href="mailto:kurguzenkov&#64;list.ru">kurguzenkov&#64;<!---->list.ru</a>&gt;<br />
+		<b>Located at</b> <a href="source-class-Point.html#12-138" title="Go to source code">geometry/Point.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Список методов</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Point.html#31-39" title="Go to source code">__construct</a>( <span>integer <var>$x</var></span>, <span>integer <var>$y</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$x</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$y</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="offset" id="_offset">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Point.html">Point</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_offset">#</a>
+		<code><a href="source-class-Point.html#41-52" title="Go to source code">offset</a>( <span><code><a href="class-Point.html">Point</a></code> <var>$p</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Смещает точку на указанную точку,
+складывая их координаты. Метод возвращает
+смещённую точку.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Смещает точку на указанную точку,
+складывая их координаты. Метод возвращает
+смещённую точку.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$p</var></dt>
+					<dd><code><code><a href="class-Point.html">Point</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Point.html">Point</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="add" id="_add">
+
+		<td class="attributes"><code>
+			 public static
+			<code><a href="class-Point.html">Point</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_add">#</a>
+		<code><a href="source-class-Point.html#54-70" title="Go to source code">add</a>( <span><code><a href="class-Point.html">Point</a></code> <var>$p</var></span>, <span><code><a href="class-Point.html">Point</a></code>|<code><a href="class-Size.html">Size</a></code> <var>$obj</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Складывает координаты точки с
+координатами точки или высотой и шириной
+размера и возвращяет новую точку.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Складывает координаты точки с
+координатами точки или высотой и шириной
+размера и возвращяет новую точку.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$p</var></dt>
+					<dd><code><code><a href="class-Point.html">Point</a></code></code></dd>
+					<dt><var>$obj</var></dt>
+					<dd><code><code><a href="class-Point.html">Point</a></code>|<code><a href="class-Size.html">Size</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Point.html">Point</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="subtract" id="_subtract">
+
+		<td class="attributes"><code>
+			 public static
+			<code><a href="class-Point.html">Point</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_subtract">#</a>
+		<code><a href="source-class-Point.html#72-88" title="Go to source code">subtract</a>( <span><code><a href="class-Point.html">Point</a></code> <var>$p</var></span>, <span><code><a href="class-Point.html">Point</a></code>|<code><a href="class-Size.html">Size</a></code> <var>$obj</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Вычитает из координат точки координаты
+другой точки или высоту и ширину размера.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Вычитает из координат точки координаты
+другой точки или высоту и ширину размера.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$p</var></dt>
+					<dd><code><code><a href="class-Point.html">Point</a></code></code></dd>
+					<dt><var>$obj</var></dt>
+					<dd><code><code><a href="class-Point.html">Point</a></code>|<code><a href="class-Size.html">Size</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Point.html">Point</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="equals" id="_equals">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_equals">#</a>
+		<code><a href="source-class-Point.html#90-98" title="Go to source code">equals</a>( <span><code><a href="class-Point.html">Point</a></code> <var>$p</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Сравнивает две точки</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Сравнивает две точки</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$p</var></dt>
+					<dd><code><code><a href="class-Point.html">Point</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getX" id="_getX">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getX">#</a>
+		<code><a href="source-class-Point.html#100-102" title="Go to source code">getX</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getY" id="_getY">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getY">#</a>
+		<code><a href="source-class-Point.html#104-106" title="Go to source code">getY</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setX" id="_setX">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setX">#</a>
+		<code><a href="source-class-Point.html#109-119" title="Go to source code">setX</a>( <span>integer <var>$x</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$x</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setY" id="_setY">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setY">#</a>
+		<code><a href="source-class-Point.html#122-132" title="Go to source code">setY</a>( <span>integer <var>$y</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$y</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__toString" id="___toString">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___toString">#</a>
+		<code><a href="source-class-Point.html#134-136" title="Go to source code">__toString</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

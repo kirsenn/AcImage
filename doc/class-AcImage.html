@@ -1,0 +1,1875 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class AcImage</title>
+
+	<script type="text/javascript" src="resources/combined.js?3408117355"></script>
+	<script type="text/javascript" src="elementlist.js?3429070013"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Обзор</span></a>
+
+
+		<div id="groups">
+			<h3>Пакеты</h3>
+			<ul>
+				<li><a href="package-exceptions.html">exceptions</a>
+						</li>
+				<li><a href="package-geometry.html">geometry</a>
+						</li>
+				<li class="active"><a href="package-image.html">image</a>
+						</li>
+				<li><a href="package-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Классы</h3>
+			<ul>
+				<li><a href="class-AcColor.html">AcColor</a></li>
+				<li class="active"><a href="class-AcImage.html">AcImage</a></li>
+				<li><a href="class-AcImageGIF.html">AcImageGIF</a></li>
+				<li><a href="class-AcImageJPG.html">AcImageJPG</a></li>
+				<li><a href="class-AcImagePNG.html">AcImagePNG</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Обзор</span></a>
+			</li>
+			<li>
+				<a href="package-image.html" title="Summary of image"><span>Пакет</span></a>
+			</li>
+			<li class="active">
+<span>Класс</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Дерево</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Класс AcImage</h1>
+
+
+	<div class="description">
+	
+<p>Класс, описывающий изображение, и
+содержащий методы для работы с ним.</p>
+
+	</div>
+
+
+
+	<div>
+		<h4>Direct known subclasses</h4>
+			<a href="class-AcImageGIF.html">AcImageGIF</a>, 
+			<a href="class-AcImageJPG.html">AcImageJPG</a>, 
+			<a href="class-AcImagePNG.html">AcImagePNG</a>
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-image.html">image</a><br />
+
+				<b>Author:</b>
+				Андрей Загорцев &lt;<a
+href="mailto:freeron&#64;ya.ru">freeron&#64;<!---->ya.ru</a>&gt;<br />
+				<b>Author:</b>
+				Антон Кургузенков &lt;<a
+href="mailto:kurguzenkov&#64;list.ru">kurguzenkov&#64;<!---->list.ru</a>&gt;<br />
+		<b>Located at</b> <a href="source-class-AcImage.html#20-974" title="Go to source code">AcImage.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Список методов</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-AcImage.html#118-133" title="Go to source code">__construct</a>( <span>string <var>$filePath</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filePath</var></dt>
+					<dd><code>string</code><br>путь к файлу с изображением</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createImage" id="_createImage">
+
+		<td class="attributes"><code>
+			 public static
+			<code><a href="class-AcImageJPG.html">AcImageJPG</a></code>|<code><a href="class-AcImagePNG.html">AcImagePNG</a></code>|<code><a href="class-AcImageGIF.html">AcImageGIF</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createImage">#</a>
+		<code><a href="source-class-AcImage.html#136-167" title="Go to source code">createImage</a>( <span>string <var>$filePath</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Cоздаёт экземпляры классов AcImageJPG, AcImageGIF,
+AcImagePNG в зависимости от типа изображения.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Cоздаёт экземпляры классов AcImageJPG, AcImageGIF,
+AcImagePNG в зависимости от типа изображения.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filePath</var></dt>
+					<dd><code>string</code><br>путь к файлу с изображением</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-AcImageJPG.html">AcImageJPG</a></code>|<code><a href="class-AcImagePNG.html">AcImagePNG</a></code>|<code><a href="class-AcImageGIF.html">AcImageGIF</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="saveAsJPG" id="_saveAsJPG">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-AcImage.html">AcImage</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_saveAsJPG">#</a>
+		<code><a href="source-class-AcImage.html#170-193" title="Go to source code">saveAsJPG</a>( <span>string <var>$path</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Сохраняет изображение в формате jpg</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Сохраняет изображение в формате jpg</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd><code>string</code><br>путь, по которому сохранится изображение</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-AcImage.html">AcImage</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-UnsupportedFormatException.html">UnsupportedFormatException</a></code></code><br />
+					<code><code><a href="class-FileAlreadyExistsException.html">FileAlreadyExistsException</a></code></code><br />
+					<code><code><a href="class-FileNotSaveException.html">FileNotSaveException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="saveAsPNG" id="_saveAsPNG">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-AcImage.html">AcImage</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_saveAsPNG">#</a>
+		<code><a href="source-class-AcImage.html#196-221" title="Go to source code">saveAsPNG</a>( <span>string <var>$path</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Сохраняет изображение в формате png</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Сохраняет изображение в формате png</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd><code>string</code><br>путь, по которому сохранится изображение</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-AcImage.html">AcImage</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-UnsupportedFormatException.html">UnsupportedFormatException</a></code></code><br />
+					<code><code><a href="class-FileAlreadyExistsException.html">FileAlreadyExistsException</a></code></code><br />
+					<code><code><a href="class-FileNotSaveException.html">FileNotSaveException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="saveAsGIF" id="_saveAsGIF">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-AcImage.html">AcImage</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_saveAsGIF">#</a>
+		<code><a href="source-class-AcImage.html#224-249" title="Go to source code">saveAsGIF</a>( <span>string <var>$path</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Сохраняет изображение в формате GIF</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Сохраняет изображение в формате GIF</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$path</var></dt>
+					<dd><code>string</code><br>путь, по которому сохранится изображение</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-AcImage.html">AcImage</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-UnsupportedFormatException.html">UnsupportedFormatException</a></code></code><br />
+					<code><code><a href="class-FileAlreadyExistsException.html">FileAlreadyExistsException</a></code></code><br />
+					<code><code><a href="class-FileNotSaveException.html">FileNotSaveException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="resize" id="_resize">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-AcImage.html">AcImage</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_resize">#</a>
+		<code><a href="source-class-AcImage.html#252-282" title="Go to source code">resize</a>( )</code>
+
+		<div class="description short">
+			
+<p>Вписывает изображение в рамки. Принимает
+размер (рамку) в которую вписывается
+изображение или высоту и ширину этой
+рамки.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Вписывает изображение в рамки. Принимает
+размер (рамку) в которую вписывается
+изображение или высоту и ширину этой
+рамки.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-AcImage.html">AcImage</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="resizeByWidth" id="_resizeByWidth">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-AcImage.html">AcImage</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_resizeByWidth">#</a>
+		<code><a href="source-class-AcImage.html#285-298" title="Go to source code">resizeByWidth</a>( <span>integer <var>$width</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Ужимает изображение по <i>ширине</i>.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Ужимает изображение по <i>ширине</i>.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$width</var></dt>
+					<dd><code>integer</code><br>ширина рамки</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-AcImage.html">AcImage</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="resizeByHeight" id="_resizeByHeight">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-AcImage.html">AcImage</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_resizeByHeight">#</a>
+		<code><a href="source-class-AcImage.html#301-314" title="Go to source code">resizeByHeight</a>( <span>integer <var>$height</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Ужимает изображение по <i>высоте</i>.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Ужимает изображение по <i>высоте</i>.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$height</var></dt>
+					<dd><code>integer</code><br>высота рамки</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-AcImage.html">AcImage</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="crop" id="_crop">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-AcImage.html">AcImage</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_crop">#</a>
+		<code><a href="source-class-AcImage.html#317-353" title="Go to source code">crop</a>( )</code>
+
+		<div class="description short">
+			
+<p>Производит кроп изображения, то есть
+вырезает из него произвольную
+прямоугольную область. Метод принимает
+либо вырезаемый прямоугольник, либо его
+параметры.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Производит кроп изображения, то есть
+вырезает из него произвольную
+прямоугольную область. Метод принимает
+либо вырезаемый прямоугольник, либо его
+параметры.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-AcImage.html">AcImage</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="cropSquare" id="_cropSquare">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-AcImage.html">AcImage</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_cropSquare">#</a>
+		<code><a href="source-class-AcImage.html#356-388" title="Go to source code">cropSquare</a>( )</code>
+
+		<div class="description short">
+			
+<p>Вырезает произвольный квадрат из
+изображения. Метод может принимать
+вырезаемый прямоугольник, обязанный быть
+квадратом, либо параметры для создания
+такого прямоугольника.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Вырезает произвольный квадрат из
+изображения. Метод может принимать
+вырезаемый прямоугольник, обязанный быть
+квадратом, либо параметры для создания
+такого прямоугольника.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-AcImage.html">AcImage</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="cropCenter" id="_cropCenter">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-AcImage.html">AcImage</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_cropCenter">#</a>
+		<code><a href="source-class-AcImage.html#391-437" title="Go to source code">cropCenter</a>( <span>integer|string <var>$width</var></span>, <span>integer|string <var>$height</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Вырезает центральную область
+изображения. Принимает высоту и ширину
+вырезаемой области.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Вырезает центральную область
+изображения. Принимает высоту и ширину
+вырезаемой области.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$width</var></dt>
+					<dd><code>integer|string</code><br>ширина вырезаемой области</dd>
+					<dt><var>$height</var></dt>
+					<dd><code>integer|string</code><br>высота вырезаемой области</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-AcImage.html">AcImage</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="thumbnail" id="_thumbnail">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-AcImage.html">AcImage</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_thumbnail">#</a>
+		<code><a href="source-class-AcImage.html#497-584" title="Go to source code">thumbnail</a>( <span>integer <var>$width</var></span>, <span>integer <var>$height</var></span>, <span>float <var>$c</var> = <span class="php-num">2</span></span> )</code>
+
+		<div class="description short">
+			
+<p>"Умное" создание миниатюр.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>"Умное" создание миниатюр.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$width</var></dt>
+					<dd><code>integer</code><br>ширина</dd>
+					<dt><var>$height</var></dt>
+					<dd><code>integer</code><br>высота</dd>
+					<dt><var>$c</var></dt>
+					<dd><code>float</code><br>коэффициент превышения.</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-AcImage.html">AcImage</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="drawLogo" id="_drawLogo">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-AcImage.html">AcImage</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_drawLogo">#</a>
+		<code><a href="source-class-AcImage.html#587-633" title="Go to source code">drawLogo</a>( <span>mixed <var>$logo</var></span>, <span>integer <var>$corner</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Наносит лого на изображение.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Наносит лого на изображение.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$logo</var></dt>
+					<dd><code>mixed</code></dd>
+					<dt><var>$corner</var></dt>
+					<dd><code>integer</code><br>номер угла, в котором будет размещенно
+лого<br />
+0 1<br />
+2 3</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-AcImage.html">AcImage</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+				<h4>See</h4>
+				<div class="list">
+						<code><code><a href="class-AcImage.html#TOP_LEFT">AcImage::<b>TOP_LEFT</b></a></code></code><br />
+						<code><code><a href="class-AcImage.html#TOP_RIGHT">AcImage::<b>TOP_RIGHT</b></a></code></code><br />
+						<code><code><a href="class-AcImage.html#BOTTOM_LEFT">AcImage::<b>BOTTOM_LEFT</b></a></code></code><br />
+						<code><code><a href="class-AcImage.html#BOTTOM_RIGHT">AcImage::<b>BOTTOM_RIGHT</b></a></code></code><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isFileExists" id="_isFileExists">
+
+		<td class="attributes"><code>
+			 public static
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isFileExists">#</a>
+		<code><a href="source-class-AcImage.html#668-687" title="Go to source code">isFileExists</a>( <span>string <var>$filePath</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Проверяет, существует ли файл.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Проверяет, существует ли файл.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filePath</var></dt>
+					<dd><code>string</code><br>путь к файлу</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isFileImage" id="_isFileImage">
+
+		<td class="attributes"><code>
+			 public static
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isFileImage">#</a>
+		<code><a href="source-class-AcImage.html#690-703" title="Go to source code">isFileImage</a>( <span>string <var>$filePath</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Проверяет, является ли файл
+изображением.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Проверяет, является ли файл
+изображением.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filePath</var></dt>
+					<dd><code>string</code><br>путь к файлу</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setRewrite" id="_setRewrite">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setRewrite">#</a>
+		<code><a href="source-class-AcImage.html#719-729" title="Go to source code">setRewrite</a>( <span>boolean <var>$mode</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$mode</var></dt>
+					<dd><code>boolean</code></dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRewrite" id="_getRewrite">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRewrite">#</a>
+		<code><a href="source-class-AcImage.html#731-734" title="Go to source code">getRewrite</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getImageInfo" id="_getImageInfo">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getImageInfo">#</a>
+		<code><a href="source-class-AcImage.html#736-742" title="Go to source code">getImageInfo</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getShortPHPVersion" id="_getShortPHPVersion">
+
+		<td class="attributes"><code>
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getShortPHPVersion">#</a>
+		<code><a href="source-class-AcImage.html#745-759" title="Go to source code">getShortPHPVersion</a>( )</code>
+
+		<div class="description short">
+			
+<p>Возвращает две первые цифры версии php,
+разделённые точкой. Например: 5.2, 5.3</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Возвращает две первые цифры версии php,
+разделённые точкой. Например: 5.2, 5.3</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br />
+				</div>
+
+
+				<h4>Since</h4>
+				<div class="list">
+						2.0.1<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isSupportedGD" id="_isSupportedGD">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isSupportedGD">#</a>
+		<code><a href="source-class-AcImage.html#761-764" title="Go to source code">isSupportedGD</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getGDinfo" id="_getGDinfo">
+
+		<td class="attributes"><code>
+			 public static
+			array|boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getGDinfo">#</a>
+		<code><a href="source-class-AcImage.html#767-783" title="Go to source code">getGDinfo</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Возвращает результат работы функции gd_info()
+или false если библиотека gd не доступна</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array|boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getFilePath" id="_getFilePath">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getFilePath">#</a>
+		<code><a href="source-class-AcImage.html#785-788" title="Go to source code">getFilePath</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSourceImage" id="_getSourceImage">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSourceImage">#</a>
+		<code><a href="source-class-AcImage.html#795-798" title="Go to source code">getSourceImage</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMimeType" id="_getMimeType">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMimeType">#</a>
+		<code><a href="source-class-AcImage.html#800-804" title="Go to source code">getMimeType</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSize" id="_getSize">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getSize">#</a>
+		<code><a href="source-class-AcImage.html#806-809" title="Go to source code">getSize</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getWidth" id="_getWidth">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getWidth">#</a>
+		<code><a href="source-class-AcImage.html#811-814" title="Go to source code">getWidth</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHeight" id="_getHeight">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHeight">#</a>
+		<code><a href="source-class-AcImage.html#816-819" title="Go to source code">getHeight</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getResource" id="_getResource">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getResource">#</a>
+		<code><a href="source-class-AcImage.html#821-824" title="Go to source code">getResource</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setQuality" id="_setQuality">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setQuality">#</a>
+		<code><a href="source-class-AcImage.html#838-850" title="Go to source code">setQuality</a>( <span>integer <var>$q</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$q</var></dt>
+					<dd><code>integer</code><br>качество изображения от 0 до 100</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getQuality" id="_getQuality">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getQuality">#</a>
+		<code><a href="source-class-AcImage.html#852-855" title="Go to source code">getQuality</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setTransparency" id="_setTransparency">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setTransparency">#</a>
+		<code><a href="source-class-AcImage.html#858-869" title="Go to source code">setTransparency</a>( <span>boolean <var>$mode</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$mode</var></dt>
+					<dd><code>boolean</code></dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTransparency" id="_getTransparency">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTransparency">#</a>
+		<code><a href="source-class-AcImage.html#871-874" title="Go to source code">getTransparency</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setBackgroundColor" id="_setBackgroundColor">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setBackgroundColor">#</a>
+		<code><a href="source-class-AcImage.html#876-898" title="Go to source code">setBackgroundColor</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBackgroundColor" id="_getBackgroundColor">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBackgroundColor">#</a>
+		<code><a href="source-class-AcImage.html#900-906" title="Go to source code">getBackgroundColor</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getCornerLogo" id="_getCornerLogo">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getCornerLogo">#</a>
+		<code><a href="source-class-AcImage.html#908-911" title="Go to source code">getCornerLogo</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setCornerLogo" id="_setCornerLogo">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setCornerLogo">#</a>
+		<code><a href="source-class-AcImage.html#914-933" title="Go to source code">setCornerLogo</a>( <span>integer <var>$corner</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$corner</var></dt>
+					<dd><code>integer</code><br>номер угла изображения<br />
+0 1<br />
+2 3</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+				<h4>See</h4>
+				<div class="list">
+						<code><code><a href="class-AcImage.html#TOP_LEFT">AcImage::<b>TOP_LEFT</b></a></code></code><br />
+						<code><code><a href="class-AcImage.html#TOP_RIGHT">AcImage::<b>TOP_RIGHT</b></a></code></code><br />
+						<code><code><a href="class-AcImage.html#BOTTOM_RIGHT">AcImage::<b>BOTTOM_RIGHT</b></a></code></code><br />
+						<code><code><a href="class-AcImage.html#BOTTOM_LEFT">AcImage::<b>BOTTOM_LEFT</b></a></code></code><br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setMaxProportionLogo" id="_setMaxProportionLogo">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setMaxProportionLogo">#</a>
+		<code><a href="source-class-AcImage.html#936-948" title="Go to source code">setMaxProportionLogo</a>( <span>float <var>$maxPropotionsLogo</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$maxPropotionsLogo</var></dt>
+					<dd><code>float</code><br>от 0 &lt;= $maxPropotionsLogo &lt; 1</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getMaxProportionLogo" id="_getMaxProportionLogo">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getMaxProportionLogo">#</a>
+		<code><a href="source-class-AcImage.html#950-953" title="Go to source code">getMaxProportionLogo</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setPaddingProportionLogo" id="_setPaddingProportionLogo">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setPaddingProportionLogo">#</a>
+		<code><a href="source-class-AcImage.html#956-968" title="Go to source code">setPaddingProportionLogo</a>( <span>float <var>$paddingProportionLogo</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$paddingProportionLogo</var></dt>
+					<dd><code>float</code><br>от 0 &lt;= $paddingProportionLogo &lt; 1</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getPaddingProportionLogo" id="_getPaddingProportionLogo">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getPaddingProportionLogo">#</a>
+		<code><a href="source-class-AcImage.html#970-973" title="Go to source code">getPaddingProportionLogo</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary" id="constants">
+	<caption>Список констант</caption>
+	<tr data-order="PNG" id="PNG">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-AcImage.html#25" title="Go to source code"><b>PNG</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'image/png'</span></code></td>
+		<td class="description"><div>
+			<a href="#PNG" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="JPEG" id="JPEG">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-AcImage.html#26" title="Go to source code"><b>JPEG</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'image/jpeg'</span></code></td>
+		<td class="description"><div>
+			<a href="#JPEG" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="GIF" id="GIF">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-AcImage.html#27" title="Go to source code"><b>GIF</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'image/gif'</span></code></td>
+		<td class="description"><div>
+			<a href="#GIF" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="PROPORTION" id="PROPORTION">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-AcImage.html#29" title="Go to source code"><b>PROPORTION</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'pr'</span></code></td>
+		<td class="description"><div>
+			<a href="#PROPORTION" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="PIXELS" id="PIXELS">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-AcImage.html#30" title="Go to source code"><b>PIXELS</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'px'</span></code></td>
+		<td class="description"><div>
+			<a href="#PIXELS" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="PERCENT" id="PERCENT">
+
+		<td class="attributes"><code>string</code></td>
+		<td class="name"><code>
+				<a href="source-class-AcImage.html#31" title="Go to source code"><b>PERCENT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-quote">'%'</span></code></td>
+		<td class="description"><div>
+			<a href="#PERCENT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="TOP_LEFT" id="TOP_LEFT">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-AcImage.html#33" title="Go to source code"><b>TOP_LEFT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">0</span></code></td>
+		<td class="description"><div>
+			<a href="#TOP_LEFT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="TOP_RIGHT" id="TOP_RIGHT">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-AcImage.html#34" title="Go to source code"><b>TOP_RIGHT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">1</span></code></td>
+		<td class="description"><div>
+			<a href="#TOP_RIGHT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="BOTTOM_RIGHT" id="BOTTOM_RIGHT">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-AcImage.html#35" title="Go to source code"><b>BOTTOM_RIGHT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">2</span></code></td>
+		<td class="description"><div>
+			<a href="#BOTTOM_RIGHT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="BOTTOM_LEFT" id="BOTTOM_LEFT">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name"><code>
+				<a href="source-class-AcImage.html#36" title="Go to source code"><b>BOTTOM_LEFT</b></a>
+		</code></td>
+		<td class="value"><code><span class="php-num">3</span></code></td>
+		<td class="description"><div>
+			<a href="#BOTTOM_LEFT" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

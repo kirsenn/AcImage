@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class Size</title>
+
+	<script type="text/javascript" src="resources/combined.js?3408117355"></script>
+	<script type="text/javascript" src="elementlist.js?3429070013"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Обзор</span></a>
+
+
+		<div id="groups">
+			<h3>Пакеты</h3>
+			<ul>
+				<li><a href="package-exceptions.html">exceptions</a>
+						</li>
+				<li class="active"><a href="package-geometry.html">geometry</a>
+						</li>
+				<li><a href="package-image.html">image</a>
+						</li>
+				<li><a href="package-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Классы</h3>
+			<ul>
+				<li><a href="class-Point.html">Point</a></li>
+				<li><a href="class-Rectangle.html">Rectangle</a></li>
+				<li class="active"><a href="class-Size.html">Size</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Обзор</span></a>
+			</li>
+			<li>
+				<a href="package-geometry.html" title="Summary of geometry"><span>Пакет</span></a>
+			</li>
+			<li class="active">
+<span>Класс</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Дерево</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Класс Size</h1>
+
+
+	<div class="description">
+	
+<p>Класс, описывающий размер как пару
+высота-ширина.</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-geometry.html">geometry</a><br />
+
+				<b>Author:</b>
+				Антон Кургузенков &lt;<a
+href="mailto:kurguzenkov&#64;list.ru">kurguzenkov&#64;<!---->list.ru</a>&gt;<br />
+		<b>Located at</b> <a href="source-class-Size.html#14-256" title="Go to source code">geometry/Size.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Список методов</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Size.html#35-43" title="Go to source code">__construct</a>( <span>integer <var>$width</var></span>, <span>integer <var>$height</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$width</var></dt>
+					<dd><code>integer</code><br>$width</dd>
+					<dt><var>$height</var></dt>
+					<dd><code>integer</code><br>$height</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="greatThen" id="_greatThen">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_greatThen">#</a>
+		<code><a href="source-class-Size.html#46-55" title="Go to source code">greatThen</a>( <span><code><a href="class-Size.html">Size</a></code> <var>$s</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Устанавливает больше ли, (по высоте
+<b>или</b> по ширине) размер заданного
+размера.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Устанавливает больше ли, (по высоте
+<b>или</b> по ширине) размер заданного
+размера.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$s</var></dt>
+					<dd><code><code><a href="class-Size.html">Size</a></code></code><br>$s</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="lessThen" id="_lessThen">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_lessThen">#</a>
+		<code><a href="source-class-Size.html#58-67" title="Go to source code">lessThen</a>( <span><code><a href="class-Size.html">Size</a></code> <var>$s</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Устанавливает меньше ли, (по высоте <b>и</b>
+по ширине) размер заданного размера.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Устанавливает меньше ли, (по высоте <b>и</b>
+по ширине) размер заданного размера.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$s</var></dt>
+					<dd><code><code><a href="class-Size.html">Size</a></code></code><br>$s</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isInner" id="_isInner">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isInner">#</a>
+		<code><a href="source-class-Size.html#70-79" title="Go to source code">isInner</a>( <span><code><a href="class-Size.html">Size</a></code> <var>$s</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Устанавливает, меньше или равен ли размер
+(по высоте <b>и</b> по ширине) заданного
+размера.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Устанавливает, меньше или равен ли размер
+(по высоте <b>и</b> по ширине) заданного
+размера.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$s</var></dt>
+					<dd><code><code><a href="class-Size.html">Size</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="equals" id="_equals">
+
+		<td class="attributes"><code>
+			 public 
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_equals">#</a>
+		<code><a href="source-class-Size.html#82-90" title="Go to source code">equals</a>( <span><code><a href="class-Size.html">Size</a></code> <var>$s</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Устанавливает равен ли заданный размер
+текущему.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Устанавливает равен ли заданный размер
+текущему.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$s</var></dt>
+					<dd><code><code><a href="class-Size.html">Size</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="flip" id="_flip">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Size.html">Size</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_flip">#</a>
+		<code><a href="source-class-Size.html#93-102" title="Go to source code">flip</a>( )</code>
+
+		<div class="description short">
+			
+<p>Менеят местами высоту и ширину размера,
+"переварачивая" его.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Менеят местами высоту и ширину размера,
+"переварачивая" его.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Size.html">Size</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getByWidth" id="_getByWidth">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Size.html">Size</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getByWidth">#</a>
+		<code><a href="source-class-Size.html#105-124" title="Go to source code">getByWidth</a>( <span>integer <var>$width</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Пропорционально уменьшает размер по
+заданной ширине. Возвращает новый размер,
+не изменяя старый.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Пропорционально уменьшает размер по
+заданной ширине. Возвращает новый размер,
+не изменяя старый.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$width</var></dt>
+					<dd><code>integer</code><br>$width</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Size.html">Size</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code>IllegalArgumentExceptions</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getByHeight" id="_getByHeight">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Size.html">Size</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getByHeight">#</a>
+		<code><a href="source-class-Size.html#127-145" title="Go to source code">getByHeight</a>( <span>integer <var>$height</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Пропорционально уменьшает размер по
+заданной высоте. Возвращает новый размер,
+не изменяя старый.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Пропорционально уменьшает размер по
+заданной высоте. Возвращает новый размер,
+не изменяя старый.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$height</var></dt>
+					<dd><code>integer</code><br>$height</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Size.html">Size</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getByFrame" id="_getByFrame">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-Size.html">Size</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getByFrame">#</a>
+		<code><a href="source-class-Size.html#148-178" title="Go to source code">getByFrame</a>( )</code>
+
+		<div class="description short">
+			
+<p>Вписывает размер в рамки, пропорционально
+уменьшая его. Возвращает новый размер, не
+изменяя старый.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Вписывает размер в рамки, пропорционально
+уменьшая его. Возвращает новый размер, не
+изменяя старый.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Size.html">Size</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="add" id="_add">
+
+		<td class="attributes"><code>
+			 public static
+			<code><a href="class-Size.html">Size</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_add">#</a>
+		<code><a href="source-class-Size.html#181-197" title="Go to source code">add</a>( <span><code><a href="class-Size.html">Size</a></code> <var>$s</var></span>, <span><code><a href="class-Size.html">Size</a></code>|<code><a href="class-Point.html">Point</a></code> <var>$obj</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Складывает высоту и ширину размера с
+координатами точки или высотой и шириной
+другого размера и возвращает получившийся
+размер.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Складывает высоту и ширину размера с
+координатами точки или высотой и шириной
+другого размера и возвращает получившийся
+размер.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$s</var></dt>
+					<dd><code><code><a href="class-Size.html">Size</a></code></code><br>$s</dd>
+					<dt><var>$obj</var></dt>
+					<dd><code><code><a href="class-Size.html">Size</a></code>|<code><a href="class-Point.html">Point</a></code></code><br>$obj</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Size.html">Size</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="subtract" id="_subtract">
+
+		<td class="attributes"><code>
+			 public static
+			<code><a href="class-Size.html">Size</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_subtract">#</a>
+		<code><a href="source-class-Size.html#200-217" title="Go to source code">subtract</a>( <span><code><a href="class-Size.html">Size</a></code> <var>$s</var></span>, <span><code><a href="class-Size.html">Size</a></code>|<code><a href="class-Point.html">Point</a></code> <var>$obj</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Вычитает из высоты и ширины размера
+координаты точки или высоту и ширину
+другого размера и возвращает получившийся
+размер.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$s</var></dt>
+					<dd><code><code><a href="class-Size.html">Size</a></code></code><br>$s</dd>
+					<dt><var>$obj</var></dt>
+					<dd><code><code><a href="class-Size.html">Size</a></code>|<code><a href="class-Point.html">Point</a></code></code><br>$obj</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-Size.html">Size</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getWidth" id="_getWidth">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getWidth">#</a>
+		<code><a href="source-class-Size.html#219-221" title="Go to source code">getWidth</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHeight" id="_getHeight">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHeight">#</a>
+		<code><a href="source-class-Size.html#223-225" title="Go to source code">getHeight</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setWidth" id="_setWidth">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setWidth">#</a>
+		<code><a href="source-class-Size.html#228-238" title="Go to source code">setWidth</a>( <span>integer <var>$width</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$width</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setHeight" id="_setHeight">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setHeight">#</a>
+		<code><a href="source-class-Size.html#241-251" title="Go to source code">setHeight</a>( <span>integer <var>$height</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$height</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-IllegalArgumentException.html">IllegalArgumentException</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="__toString" id="___toString">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___toString">#</a>
+		<code><a href="source-class-Size.html#253-255" title="Go to source code">__toString</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
